@@ -169,6 +169,7 @@ body {
   height: 60%;
   opacity: 1;
   transition: background-color 0.3s ease-in-out;
+  z-index: 2;
 }
 .project-item::before {
   top: 0;
@@ -177,6 +178,15 @@ body {
 .project-item::after {
   bottom: 0;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.91));
+}
+.project-item:hover::after {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+}
+.project-item:hover::before {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
+}
+.project-item:hover .inner-icon-container > i {
+  color: #000;
 }
 .project-item-cookbook > .inner-bg {
   background: url("../img/img4.png") no-repeat;
@@ -202,6 +212,9 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
 }
+.inner-icon-container {
+  z-index: 3;
+}
 .inner-icon-container > i {
   display: block;
   height: 4rem;
@@ -209,6 +222,8 @@ body {
   margin: auto;
   text-align: center;
   padding: 0 0.5rem;
+  color: #cacaca;
+  transition: color 0.3s;
 }
 
 .footer {
