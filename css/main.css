@@ -77,6 +77,25 @@ body {
 .main > section {
   height: calc(100vh - 70px);
   padding: 0 5rem;
+  color: #fff;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section-container {
+  width: 30%;
+}
+.welcome-section-container > span {
+  display: block;
+  align-self: flex-end;
+  text-align: right;
+}
+.welcome-header {
+  text-align: center;
+  padding: 2rem;
 }
 
 .btn-medium {
