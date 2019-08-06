@@ -116,8 +116,8 @@
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr))
     //grid-template-areas: "cookbook gemre" "rockpaper modern"
   &-item
-    //height: 100%
-    //width: 100%
+    display: flex
+    flex-direction: row-reverse
     min-height: 300px
     min-width: 300px
     background: yellow
@@ -130,3 +130,14 @@
       //grid-area: rockpaper
     &-moderngallery
       //grid-area: modern
+.inner
+  &-bg
+    width: 60%
+    background: red
+  &-box
+    width: 40%
+  &-header
+    padding: 1rem 0 0
+    text-align: center
+  &-paragraph
+    padding: 1rem .5rem 0

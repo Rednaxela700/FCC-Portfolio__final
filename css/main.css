@@ -152,11 +152,28 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
 }
 .project-item {
+  display: flex;
+  flex-direction: row-reverse;
   min-height: 300px;
   min-width: 300px;
   background: yellow;
   color: #000;
 }
+.inner-bg {
+  width: 60%;
+  background: red;
+}
+.inner-box {
+  width: 40%;
+}
+.inner-header {
+  padding: 1rem 0 0;
+  text-align: center;
+}
+.inner-paragraph {
+  padding: 1rem 0.5rem 0;
+}
+
 .btn-medium {
   width: 180px;
   height: 60px;
