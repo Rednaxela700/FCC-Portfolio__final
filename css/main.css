@@ -73,6 +73,10 @@ body {
   text-align: center;
 }
 
+.main > section {
+  height: calc(100vh - 70px);
+}
+
 .btn-medium {
   width: 180px;
   height: 60px;
