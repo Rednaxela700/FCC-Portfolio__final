@@ -55,6 +55,9 @@
     height: calc(100vh - 70px)
     padding: 0 5rem
     color: #fff
+.section-header
+  padding: 70px 0 2rem
+  text-align: center
 .welcome
   &-section
     display: flex
@@ -69,3 +72,36 @@
   &-header
     text-align: center
     padding: 2rem
+.about
+  &-section
+    //anything
+  &-header
+    text-align: center
+    padding: 2rem 0
+  &-container
+    padding: 2rem 0
+    display: flex
+    justify-content: space-between
+  &-img
+    display: flex
+    background: url("../img/me_compressed.jpg") no-repeat center
+    background-size: cover
+    min-height: 300px
+    min-width: 300px
+    height: 400px
+    width: 300px
+    &-caption
+      background: $darkgrey
+      height: 1.5rem
+      width: 100%
+      align-self: flex-end
+      text-align: center
+.text
+  &-container
+    padding: 0 2rem
+  &-header
+    font-size: 1.3rem
+    text-align: left
+  &-paragraph
+    padding: 2rem 0 0
+    line-height: 1.3
