@@ -162,6 +162,21 @@ body {
 .inner-bg {
   width: 60%;
   background: red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.inner-icon-container {
+  background: gray;
+  height: 5rem;
+  width: 5rem;
+}
+.inner-icon-container > i {
+  display: block;
+  height: 4rem;
+  font-size: 3.5rem;
+  margin: auto;
+  text-align: center;
 }
 .inner-box {
   width: 40%;
