@@ -76,6 +76,7 @@ body {
 
 .main > section {
   height: calc(100vh - 70px);
+  padding: 0 5rem;
 }
 
 .btn-medium {
