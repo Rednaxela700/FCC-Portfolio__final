@@ -156,6 +156,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   min-height: 300px;
+  max-height: calc((100vh - (2rem * 4 + 70px))/2);
   min-width: 300px;
   background: yellow;
   color: #000;
@@ -167,17 +168,13 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
 }
-.inner-icon-container {
-  background: gray;
-  height: 5rem;
-  width: 5rem;
-}
 .inner-icon-container > i {
   display: block;
   height: 4rem;
   font-size: 3.5rem;
   margin: auto;
   text-align: center;
+  padding: 0 0.5rem;
 }
 .inner-box {
   width: 40%;
@@ -187,6 +184,7 @@ body {
   text-align: center;
 }
 .inner-paragraph {
+  font-size: 0.9rem;
   padding: 1rem 0.5rem 0;
 }
 .inner-paragraph:last-child {
