@@ -150,6 +150,7 @@ body {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  padding: 0 0 2rem 0;
 }
 .project-item {
   display: flex;
@@ -187,6 +188,9 @@ body {
 }
 .inner-paragraph {
   padding: 1rem 0.5rem 0;
+}
+.inner-paragraph:last-child {
+  padding: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .btn-medium {
