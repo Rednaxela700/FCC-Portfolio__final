@@ -48,6 +48,7 @@ body {
   height: 40px;
   width: 1px;
   background-color: #fff;
+  cursor: pointer;
 }
 .nav-item:nth-child(3)::after {
   content: "";
