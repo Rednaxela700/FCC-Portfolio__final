@@ -55,14 +55,14 @@
 
 .main
   & > section
-    height: calc(100vh - 70px)
-    padding: 0 5rem
+    //height: calc(100vh - 70px)
+    height: 100vh
+    padding: 70px 0 0 5rem
     color: #fff
 
 .section-header
-  padding: 70px 0 2rem
+  //padding: 70px 0 2rem
   text-align: center
-
 .welcome
   &-section
     display: flex
@@ -131,9 +131,9 @@
     min-height: 300px
     //100vh - (section, gap, header padding + nav height)/ 2 items
     max-height: calc((100vh - (2rem * 4 + 70px)) / 2)
+    max-width: calc((100vh - (10rem + 2rem)) / 1.5)
     min-width: 300px
     background: yellow
-    //box-shadow: inset .5rem 2rem 5rem
     color: #000
     &::after, &::before
       content: ''
@@ -141,20 +141,22 @@
       width: 100%
       height: 60%
       opacity: 1
-      transition: background-color .3s ease-in-out
+      transition: all .5s ease-in-out
       z-index: 2
     &::before
       top: 0
       background: linear-gradient(rgba(0, 0, 0, 0.91), rgba(255, 255, 255, 0.0))
     &::after
       bottom: 0
-      background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.91))
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.91))
     &:hover
       &::after
+        opacity: 0
         background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.3))
       &::before
+        opacity: 0
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.0))
-    &:hover .inner-icon-container > i
+    &:hover .inner-icon-link> i
       color: #000
 
     &-cookbook
@@ -165,7 +167,7 @@
       & > .inner-bg
         background: url("../img/img3.png") no-repeat
         background-size: cover
-        background-position-x: -2rem
+        //background-position-x: -2rem
     &-rockpaper
       & > .inner-bg
         background: url("../img/img2.png") no-repeat center
@@ -184,6 +186,8 @@
     align-items: flex-end
   &-icon-container
     z-index: 3
+  &-icon-link
+    text-decoration: none
     > i
       display: block
       height: 4rem
@@ -268,6 +272,9 @@
       margin: 1.5rem 0 0 0
   &-item
     padding: 1.5rem 1rem 1rem
+  &-link
+    text-decoration: none
+    color: #fff
     &:hover
       cursor: pointer
     > i

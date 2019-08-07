@@ -76,13 +76,12 @@ body {
 }
 
 .main > section {
-  height: calc(100vh - 70px);
-  padding: 0 5rem;
+  height: 100vh;
+  padding: 70px 0 0 5rem;
   color: #fff;
 }
 
 .section-header {
-  padding: 70px 0 2rem;
   text-align: center;
 }
 
@@ -159,6 +158,7 @@ body {
   flex-direction: row-reverse;
   min-height: 300px;
   max-height: calc((100vh - (2rem * 4 + 70px)) / 2);
+  max-width: calc((100vh - (10rem + 2rem)) / 1.5);
   min-width: 300px;
   background: yellow;
   color: #000;
@@ -169,7 +169,7 @@ body {
   width: 100%;
   height: 60%;
   opacity: 1;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 2;
 }
 .project-item::before {
@@ -178,15 +178,17 @@ body {
 }
 .project-item::after {
   bottom: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.91));
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.91));
 }
 .project-item:hover::after {
+  opacity: 0;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
 }
 .project-item:hover::before {
+  opacity: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
 }
-.project-item:hover .inner-icon-container > i {
+.project-item:hover .inner-icon-link > i {
   color: #000;
 }
 .project-item-cookbook > .inner-bg {
@@ -196,7 +198,6 @@ body {
 .project-item-gemre > .inner-bg {
   background: url("../img/img3.png") no-repeat;
   background-size: cover;
-  background-position-x: -2rem;
 }
 .project-item-rockpaper > .inner-bg {
   background: url("../img/img2.png") no-repeat center;
@@ -217,7 +218,10 @@ body {
 .inner-icon-container {
   z-index: 3;
 }
-.inner-icon-container > i {
+.inner-icon-link {
+  text-decoration: none;
+}
+.inner-icon-link > i {
   display: block;
   height: 4rem;
   font-size: 3.5rem;
@@ -306,10 +310,14 @@ body {
 .social-list-item {
   padding: 1.5rem 1rem 1rem;
 }
-.social-list-item:hover {
+.social-list-link {
+  text-decoration: none;
+  color: #fff;
+}
+.social-list-link:hover {
   cursor: pointer;
 }
-.social-list-item > i {
+.social-list-link > i {
   font-size: 2rem;
 }
 
@@ -317,6 +325,11 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 320px) {
+  .main {
+    padding: 0 1%;
+  }
+}
 .btn-medium {
   width: 180px;
   height: 60px;
