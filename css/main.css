@@ -174,11 +174,11 @@ body {
 }
 .project-item::before {
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.91), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0));
 }
 .project-item::after {
   bottom: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.91));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7));
 }
 .project-item:hover::after {
   opacity: 0;
@@ -200,11 +200,11 @@ body {
   background-size: cover;
 }
 .project-item-rockpaper > .inner-bg {
-  background: url("../img/img2.png") no-repeat center;
+  background: url("../img/img2.png") no-repeat;
   background-size: cover;
 }
 .project-item-moderngallery > .inner-bg {
-  background: url("../img/img1.png") no-repeat center;
+  background: url("../img/img1.png") no-repeat;
   background-size: cover;
 }
 
