@@ -26,6 +26,7 @@ body {
   position: fixed;
   top: 0;
   left: 25%;
+  z-index: 666;
 }
 .nav-container {
   display: flex;
@@ -157,7 +158,7 @@ body {
   position: relative;
   flex-direction: row-reverse;
   min-height: 300px;
-  max-height: calc((100vh - (2rem * 4 + 70px))/2);
+  max-height: calc((100vh - (2rem * 4 + 70px)) / 2);
   min-width: 300px;
   background: yellow;
   color: #000;
@@ -195,6 +196,7 @@ body {
 .project-item-gemre > .inner-bg {
   background: url("../img/img3.png") no-repeat;
   background-size: cover;
+  background-position-x: -2rem;
 }
 .project-item-rockpaper > .inner-bg {
   background: url("../img/img2.png") no-repeat center;
@@ -227,7 +229,92 @@ body {
 }
 
 .footer {
-  margin: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #13171f;
+  margin: 3rem 0 0 0;
+  min-height: 300px;
+  color: #fff;
+}
+.footer-item {
+  padding: 2rem;
+  max-width: 30vh;
+}
+
+.findme-container {
+  display: flex;
+  border-bottom: 1px solid #fff;
+  padding: 1rem 0;
+}
+.findme-item, .findme-icon {
+  font-size: 1.2rem;
+}
+.findme-item-second-col {
+  text-align: center;
+  width: 100%;
+}
+.findme-icon {
+  display: block;
+  padding: 0 1rem;
+}
+
+.copy-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.copy-item {
+  display: block;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-input:first-child {
+  margin: 1.5rem 0 0.5rem 0;
+}
+.form-input, .form-btn {
+  min-width: 10rem;
+  min-height: 2.5rem;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+.form-input {
+  font-size: 0.9rem;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-btn {
+  text-transform: uppercase;
+}
+.form-btn:hover {
+  cursor: pointer;
+}
+
+.social-list-container {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.social-list-container:first-child {
+  margin: 1.5rem 0 0 0;
+}
+.social-list-item {
+  padding: 1.5rem 1rem 1rem;
+}
+.social-list-item:hover {
+  cursor: pointer;
+}
+.social-list-item > i {
+  font-size: 2rem;
+}
+
+.second > li {
+  padding-top: 0;
 }
 
 .btn-medium {
