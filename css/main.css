@@ -156,6 +156,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: row-reverse;
+  justify-self: center;
   min-height: 300px;
   max-height: calc((100vh - (2rem * 4 + 70px)) / 2);
   max-width: calc((100vh - (10rem + 2rem)) / 1.5);
@@ -325,6 +326,21 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .main > section {
+    padding: 0;
+    margin: auto;
+  }
+
+  .project {
+    height: auto !important;
+  }
+
+  .inner-bg {
+    background-repeat: no-repeat;
+    background-position: center !important;
+  }
+}
 @media screen and (max-width: 320px) {
   .main {
     padding: 0 1%;
