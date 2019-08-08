@@ -194,18 +194,6 @@ body {
 .project-item:hover .inner-icon-link > i {
   color: #000;
 }
-.project-item-gemre > .inner-bg {
-  background: url("../img/img3.png") no-repeat;
-  background-size: cover;
-}
-.project-item-rockpaper > .inner-bg {
-  background: url("../img/img2.png") no-repeat;
-  background-size: cover;
-}
-.project-item-moderngallery > .inner-bg {
-  background: url("../img/img1.png") no-repeat;
-  background-size: cover;
-}
 
 .inner-bg {
   position: relative;
