@@ -258,6 +258,8 @@
       margin: 1.5rem 0 0 0
   &-item
     padding: 1.5rem 1rem 1rem
+    &:hover ~ .line__animation::after
+      transform: translateX(-200px)
   &-link
     text-decoration: none
     color: #fff
@@ -269,3 +271,20 @@
 .second
   > li
     padding-top: 0
+
+//line translate animation
+
+.line__animation
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: -1px
+    right: -100%
+    height: 5px
+    width: 100%
+    background-color: $orange
+    transition: transform .3s ease-in
+
+
+    //add display block to .sociallistlink
