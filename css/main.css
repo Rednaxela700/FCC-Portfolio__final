@@ -376,6 +376,15 @@ body {
   .about-img {
     margin: auto;
   }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy-container {
+    order: 3;
+  }
 }
 @media screen and (max-width: 320px) {
   .main {
