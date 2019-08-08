@@ -343,6 +343,9 @@ body {
   .project {
     height: auto !important;
   }
+  .project-container {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 
   .inner-bg {
     background-repeat: no-repeat;
