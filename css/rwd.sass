@@ -16,6 +16,25 @@
     background-repeat: no-repeat
     background-position: center !important
 
+// Mobile Large
+@media screen and (max-width: 425px)
+  .header
+    height: auto
+  .nav
+    display: none
+    height: auto
+    top: 0
+    left: 0
+    &-container
+      flex-direction: column
+  .about
+    &-header
+      text-align: left
+    &-container
+      flex-direction: column-reverse
+    &-img
+      margin: auto
+
 //Iphone 5 / SE
 @media screen and (max-width: 320px)
   .main

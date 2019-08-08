@@ -349,6 +349,31 @@ body {
     background-position: center !important;
   }
 }
+@media screen and (max-width: 425px) {
+  .header {
+    height: auto;
+  }
+
+  .nav {
+    display: none;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .about-header {
+    text-align: left;
+  }
+  .about-container {
+    flex-direction: column-reverse;
+  }
+  .about-img {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 320px) {
   .main {
     padding: 0 1%;
