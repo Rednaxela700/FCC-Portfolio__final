@@ -333,7 +333,7 @@ body {
 @media screen and (max-width: 1024px) {
   .main > section {
     padding: 0;
-    margin: auto;
+    margin: 1rem;
   }
 
   .project {
