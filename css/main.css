@@ -411,8 +411,9 @@ body {
   }
 }
 @media screen and (max-width: 320px) {
-  .main {
-    padding: 0 1%;
+  .about-img {
+    width: auto;
+    min-width: 0;
   }
 }
 .btn-medium {
