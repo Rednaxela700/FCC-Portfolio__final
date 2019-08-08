@@ -377,12 +377,36 @@ body {
     margin: auto;
   }
 
+  .project {
+    height: auto !important;
+  }
+  .project-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .project-item {
+    min-height: 0;
+    min-width: 0;
+  }
+
   .footer {
     flex-direction: column;
     align-items: center;
   }
+  .footer-item {
+    max-width: 100vw;
+    padding: 2rem 0 0;
+  }
+
+  .findme-container {
+    justify-content: center;
+  }
+
+  .form-input, .form-btn {
+    width: 280px;
+  }
 
   .copy-container {
+    padding-bottom: 2rem;
     order: 3;
   }
 }

@@ -36,10 +36,28 @@
       flex-direction: column-reverse
     &-img
       margin: auto
+  .project
+    height: auto !important
+    &-container
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
+    &-item
+      min-height: 0
+      min-width: 0
   .footer
     flex-direction: column
     align-items: center
+    &-item
+      max-width: 100vw
+      padding: 2rem 0 0
+  .findme
+    &-container
+      justify-content: center
+
+  .form
+    &-input, &-btn
+      width: 280px
   .copy-container
+    padding-bottom: 2rem
     order: 3
 
 //Iphone 5 / SE
