@@ -235,7 +235,7 @@ body {
   z-index: 2;
 }
 .footer-item {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .findme-container {
