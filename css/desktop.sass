@@ -55,9 +55,7 @@
 
 .main
   & > section
-    //height: calc(100vh - 70px)
-    height: 100vh
-    padding: 70px 0 0 5rem
+    margin: 0 2rem
     color: #fff
 
 .section-header
@@ -65,6 +63,7 @@
   text-align: center
 .welcome
   &-section
+    height: calc(100vh - 70px)
     display: flex
     justify-content: center
     align-items: center
@@ -80,7 +79,7 @@
 
 .about
   &-section
-  //anything
+    min-height: calc(100vh - 70px)
   &-header
     text-align: center
     padding: 2rem 0
@@ -128,10 +127,11 @@
     display: flex
     position: relative
     flex-direction: row-reverse
+    justify-self: stretch
     min-height: 300px
     //100vh - (section, gap, header padding + nav height)/ 2 items
-    max-height: calc((100vh - (2rem * 4 + 70px)) / 2)
-    max-width: calc((100vh - (10rem + 2rem)) / 1.5)
+    max-height: calc((100vh - (2rem * 4 + 70px)) / 1.5)
+    //max-width: calc((100vh - (10rem + 2rem)) / 1.5)
     min-width: 300px
     background: yellow
     color: #000
@@ -145,10 +145,10 @@
       z-index: 2
     &::before
       top: 0
-      background: linear-gradient(rgba(0, 0, 0, 0.91), rgba(255, 255, 255, 0.0))
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.0))
     &::after
       bottom: 0
-      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.91))
+      background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.7))
     &:hover
       &::after
         opacity: 0
@@ -158,33 +158,19 @@
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.0))
     &:hover .inner-icon-link> i
       color: #000
-
-    &-cookbook
-      & > .inner-bg
-        background: url("../img/img4.png") no-repeat
-        background-size: cover
-    &-gemre
-      & > .inner-bg
-        background: url("../img/img3.png") no-repeat
-        background-size: cover
-        //background-position-x: -2rem
-    &-rockpaper
-      & > .inner-bg
-        background: url("../img/img2.png") no-repeat center
-        background-size: cover
-    &-moderngallery
-      & > .inner-bg
-        background: url("../img/img1.png") no-repeat center
-        background-size: cover
-
 .inner
   &-bg
+    position: relative
     width: 100%
     background: red
     display: flex
-    justify-content: flex-end
-    align-items: flex-end
+    & > img
+      display: block
+      width: 100%
   &-icon-container
+    position: absolute
+    bottom: 0
+    right: 0
     z-index: 3
   &-icon-link
     text-decoration: none
@@ -214,9 +200,10 @@
   margin: 3rem 0 0 0
   min-height: 300px
   color: #fff
+  z-index: 2
   &-item
-    padding: 2rem
-    max-width: 30vh
+    padding: 2rem 0
+    //max-width: 30vh
 
 .findme
   &-container
@@ -273,13 +260,15 @@
   &-item
     padding: 1.5rem 1rem 1rem
   &-link
+    display: block
     text-decoration: none
     color: #fff
-    &:hover
-      cursor: pointer
     > i
       font-size: 2rem
-
+    &:hover
+      cursor: pointer
 .second
   > li
     padding-top: 0
+
+    //add display block to .sociallistlink
