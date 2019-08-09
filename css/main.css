@@ -232,6 +232,7 @@ body {
   margin: 3rem 0 0 0;
   min-height: 300px;
   color: #fff;
+  z-index: 2;
 }
 .footer-item {
   padding: 2rem;
@@ -303,18 +304,15 @@ body {
 .social-list-item {
   padding: 1.5rem 1rem 1rem;
 }
-.social-list-item:hover ~ .line__animation::after {
-  transform: translateX(-200px);
-}
 .social-list-link {
   text-decoration: none;
   color: #fff;
 }
-.social-list-link:hover {
-  cursor: pointer;
-}
 .social-list-link > i {
   font-size: 2rem;
+}
+.social-list-link:hover {
+  cursor: pointer;
 }
 
 .second > li {
@@ -323,6 +321,8 @@ body {
 
 .line__animation {
   position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
 .line__animation::after {
   content: "";
@@ -332,7 +332,11 @@ body {
   height: 5px;
   width: 100%;
   background-color: #EF8354;
+  z-index: -1;
   transition: transform 0.3s ease-in;
+}
+.line__animation:hover::after {
+  transform: translateX(-100%);
 }
 
 @media screen and (max-width: 1024px) {
