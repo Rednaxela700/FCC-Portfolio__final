@@ -236,7 +236,6 @@ body {
 }
 .footer-item {
   padding: 2rem;
-  max-width: 30vh;
 }
 
 .findme-container {
@@ -305,6 +304,7 @@ body {
   padding: 1.5rem 1rem 1rem;
 }
 .social-list-link {
+  display: block;
   text-decoration: none;
   color: #fff;
 }
